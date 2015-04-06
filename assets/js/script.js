@@ -59,6 +59,10 @@ app.analytics = {
 		$(".social a").click(app.analytics.social);
 		$("#mc_embed_signup a").click(app.analytics.email);
 		$("#toggleicon a").click(app.analytics.openwindow);
+		$("#mc-embedded-subscribe").click(app.analytics.subscription);
+	},
+	subscription: function(event) {
+		console.log("HELLLLLLO");
 	},
 	social: function(event) {
 		console.log(this.id);
