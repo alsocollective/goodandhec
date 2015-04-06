@@ -62,23 +62,17 @@ app.analytics = {
 		$("#mc-embedded-subscribe").click(app.analytics.subscription);
 	},
 	subscription: function(event) {
-		console.log("HELLLLLLO");
 		ga('send', 'event', 'conversion', 'click', 'subscribe');
 	},
 	social: function(event) {
 		console.log(this.id);
 	},
 	email: function(event) {
-		console.log("email!!!");
 		ga('send', 'event', 'conversion', 'click', 'contact');
 	},
 	openwindow: function(event) {
-		console.log("toggled open!");
-		ga('send', {
-			'hitType': 'pageview',
-			'page': '/more-info',
-			'title': 'More Information'
-		});
+		ga('send', 'event', 'conversion', 'click', 'more info');
+		ga('send', 'pageview', '/more-info', 'More Info');
 	}
 
 }
