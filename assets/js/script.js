@@ -18,9 +18,9 @@ var app = {
 		// }
 
 
-		/*if (ga) {
+		if (ga) {
 			app.analytics.init();
-		}*/
+		}
 
 		// setTimeout(function() {
 		$("#overlay").addClass("fade")
@@ -54,7 +54,7 @@ var app = {
 };
 
 
-/*app.analytics = {
+app.analytics = {
 	init: function() {
 		$(".social a").click(app.analytics.social);
 		$("#mc_embed_signup a").click(app.analytics.email);
@@ -65,7 +65,7 @@ var app = {
 	},
 	email: function(event) {
 		console.log("email!!!");
-		ga('send', 'event', 'category', 'action', 'label');
+		ga('send', 'subscription', 'conversion', 'click', 'subscribe');
 	},
 	openwindow: function(event) {
 		console.log("toggled open!");
@@ -76,4 +76,4 @@ var app = {
 		});
 	}
 
-}*/
+}
