@@ -63,7 +63,7 @@ app.analytics = {
 		//$("#toggleicon").click(app.analytics.closewindow);
 	},
 	closewindow: function(event) {
-		//ga('send', 'pageview', '/home', 'Home');
+		ga('send', 'pageview', '/home', 'Home');
 	},
 	subscription: function(event) {
 		ga('send', 'event', 'conversion', 'click', 'subscribe');
