@@ -35,6 +35,11 @@ var app = {
 		$("#mc-embedded-subscribe").click(function(event) {
 			this.href = "http://goodandhec.us10.list-manage.com/subscribe?u=2c5eed12197d57d3af985c724&id=723e03d532&MERGE0=" + $("#mce-EMAIL").val();
 		});
+		$("#mce-EMAIL").keyup(function(event) {
+			if (event.which == 13) {
+				window.open("http://goodandhec.us10.list-manage.com/subscribe?u=2c5eed12197d57d3af985c724&id=723e03d532&MERGE0=" + $("#mce-EMAIL").val());
+			}
+		});
 	},
 	detectMobile: function() {
 		// check the useragent this is a bit problematic... but hey...
