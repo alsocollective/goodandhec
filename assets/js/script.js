@@ -63,6 +63,7 @@ app.analytics = {
 	},
 	subscription: function(event) {
 		console.log("HELLLLLLO");
+		ga('send', 'subscription', 'conversion', 'click', 'subscribe');
 	},
 	social: function(event) {
 		console.log(this.id);
