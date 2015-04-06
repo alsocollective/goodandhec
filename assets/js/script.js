@@ -70,7 +70,7 @@ app.analytics = {
 	},
 	email: function(event) {
 		console.log("email!!!");
-		ga('send', 'subscription', 'conversion', 'click', 'subscribe');
+		ga('send', 'event', 'conversion', 'click', 'subscribe');
 	},
 	openwindow: function(event) {
 		console.log("toggled open!");
