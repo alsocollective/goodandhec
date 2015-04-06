@@ -69,8 +69,7 @@ app.analytics = {
 		ga('send', 'event', 'conversion', 'click', 'subscribe');
 	},
 	social: function(event) {
-		console.log("LOG");
-		console.log(this.id);
+		ga('send', 'event', 'conversion', 'click', this.id);
 	},
 	email: function(event) {
 		ga('send', 'event', 'conversion', 'click', 'contact');
