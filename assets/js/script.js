@@ -60,6 +60,10 @@ app.analytics = {
 		$("#mc_embed_signup a").click(app.analytics.email);
 		$("#toggleicon a").click(app.analytics.openwindow);
 		$("#mc-embedded-subscribe").click(app.analytics.subscription);
+		$("#toggleicon").click(app.analytics.closewindow);
+	},
+	closewindow: function(event) {
+		ga('send', 'pageview', '/home', 'Home');
 	},
 	subscription: function(event) {
 		ga('send', 'event', 'conversion', 'click', 'subscribe');
