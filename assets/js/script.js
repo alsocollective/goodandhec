@@ -18,9 +18,9 @@ var app = {
 		// }
 
 
-		/*if (ga) {
+		if (ga) {
 			app.analytics.init();
-		}*/
+		}
 
 		// setTimeout(function() {
 		$("#overlay").addClass("fade")
@@ -59,26 +59,29 @@ var app = {
 };
 
 
-/*app.analytics = {
+app.analytics = {
 	init: function() {
 		$(".social a").click(app.analytics.social);
 		$("#mc_embed_signup a").click(app.analytics.email);
 		$("#toggleicon a").click(app.analytics.openwindow);
+		$("#mc-embedded-subscribe").click(app.analytics.subscription);
+		//$("#toggleicon").click(app.analytics.closewindow);
+	},
+	closewindow: function(event) {
+		//ga('send', 'pageview', '/home', 'Home');
+	},
+	subscription: function(event) {
+		ga('send', 'event', 'conversion', 'click', 'subscribe');
 	},
 	social: function(event) {
-		console.log(this.id);
+		ga('send', 'event', 'conversion', 'click', this.id);
 	},
 	email: function(event) {
-		console.log("email!!!");
-		ga('send', 'event', 'category', 'action', 'label');
+		ga('send', 'event', 'conversion', 'click', 'contact');
 	},
 	openwindow: function(event) {
-		console.log("toggled open!");
-		ga('send', {
-			'hitType': 'pageview',
-			'page': '/more-info',
-			'title': 'More Information'
-		});
+		ga('send', 'event', 'conversion', 'click', 'more info');
+		ga('send', 'pageview', '/more-info', 'More Info');
 	}
 
-}*/
+}
