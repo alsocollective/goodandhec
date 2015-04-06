@@ -63,14 +63,14 @@ app.analytics = {
 	},
 	subscription: function(event) {
 		console.log("HELLLLLLO");
-		ga('send', 'subscription', 'conversion', 'click', 'subscribe');
+		ga('send', 'event', 'conversion', 'click', 'subscribe');
 	},
 	social: function(event) {
 		console.log(this.id);
 	},
 	email: function(event) {
 		console.log("email!!!");
-		ga('send', 'event', 'conversion', 'click', 'subscribe');
+		ga('send', 'event', 'conversion', 'click', 'contact');
 	},
 	openwindow: function(event) {
 		console.log("toggled open!");
