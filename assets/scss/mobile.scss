@@ -1,0 +1,107 @@
+@media (max-width: 600px) {
+
+body,html{
+	font-size: 0.95em;
+}
+
+#wrapper{
+
+	#mainpage{
+
+		#logocontainer{
+			width: 100%;
+			padding-top: 5em;
+		}
+		#logo{
+			width: 40%;
+		}
+		.social{
+			position: static;
+			margin: 0 auto;
+			text-align: center;
+			width: 100%;
+			display: none;
+			svg{
+				-ms-transform: scale(0.8);
+				-webkit-transform: scale(0.8);
+				transform: scale(0.8);
+			}
+		}
+		.quote{
+			width: 90%;
+		}
+		.what{
+			width: 90%;
+		}
+		#mc_embed_signup{
+			padding-top: 0;
+			padding-bottom: 5em;
+			.social{
+				display: block;
+			}
+		}
+	}
+
+	#subpage{
+		#toggleicon{
+			top: 20px;
+			right: 20px;
+			// svg{
+			// 	-ms-transform: scale(0.7);
+			// 	-webkit-transform: scale(0.7);
+			// 	transform: scale(0.7);
+			// }
+		}
+
+
+		&.open{
+			#toggleicon{
+				svg{
+					-ms-transform: rotate(-45deg); /* IE 9 */ //scale(0.7) 
+					-webkit-transform: rotate(-45deg); /* Safari */ //scale(0.7) 
+					transform: rotate(-45deg); //scale(0.7) 
+				}
+			}
+		}
+		.content{
+			p{
+				width: 80%;
+				&:first-of-type{
+					padding-top: 6em;
+					text-align: center;
+					font-size: 1.2em;
+					width: 60%;
+				}
+			}
+		}
+		#bottomlogoicons > div{
+			display: block;
+			padding: 2em 0;
+		}
+		> .content { 
+			#topleftlogosmall {
+				text-align: left;
+				svg{
+					-ms-transform: scale(0.5);
+					-ms-transform-origin: 0% 0%;
+					-webkit-transform: scale(0.5);
+					-webkit-transform-origin: 0% 0%;
+					transform: scale(0.5);
+					transform-origin: 0% 0%;
+				}
+			}
+		}
+
+	}
+
+
+}
+
+@media (min-height: 600px) {
+	#wrapper #mainpage #mc_embed_signup{
+		position: fixed;
+		padding-bottom: 2em;
+	}
+}
+
+}

@@ -1,0 +1,31 @@
+@media (max-width: 1100px) {
+#wrapper{
+	#subpage {
+		> .content{
+			#topleftlogosmall{
+				svg{
+					-ms-transform: scale(0.8);
+					-ms-transform-origin: 0% 0%;
+					-webkit-transform: scale(0.8);
+					-webkit-transform-origin: 0% 0%;
+					transform: scale(0.8);
+					transform-origin: 0% 0%;
+				}
+			}
+			p:first-of-type{
+				padding-top: 20%;
+			}
+			p{
+				width: 60%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+}

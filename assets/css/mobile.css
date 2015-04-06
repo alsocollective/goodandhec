@@ -1,0 +1,62 @@
+@media (max-width: 600px) {
+  body, html {
+    font-size: 0.95em; }
+
+  #wrapper #mainpage #logocontainer {
+    width: 100%;
+    padding-top: 5em; }
+  #wrapper #mainpage #logo {
+    width: 40%; }
+  #wrapper #mainpage .social {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: none; }
+    #wrapper #mainpage .social svg {
+      -ms-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); }
+  #wrapper #mainpage .quote {
+    width: 90%; }
+  #wrapper #mainpage .what {
+    width: 90%; }
+  #wrapper #mainpage #mc_embed_signup {
+    padding-top: 0;
+    padding-bottom: 5em; }
+    #wrapper #mainpage #mc_embed_signup .social {
+      display: block; }
+  #wrapper #subpage #toggleicon {
+    top: 20px;
+    right: 20px; }
+  #wrapper #subpage.open #toggleicon svg {
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Safari */
+    transform: rotate(-45deg); }
+  #wrapper #subpage .content p {
+    width: 80%; }
+    #wrapper #subpage .content p:first-of-type {
+      padding-top: 6em;
+      text-align: center;
+      font-size: 1.2em;
+      width: 60%; }
+  #wrapper #subpage #bottomlogoicons > div {
+    display: block;
+    padding: 2em 0; }
+  #wrapper #subpage > .content #topleftlogosmall {
+    text-align: left; }
+    #wrapper #subpage > .content #topleftlogosmall svg {
+      -ms-transform: scale(0.5);
+      -ms-transform-origin: 0% 0%;
+      -webkit-transform: scale(0.5);
+      -webkit-transform-origin: 0% 0%;
+      transform: scale(0.5);
+      transform-origin: 0% 0%; } }
+@media (max-width: 600px) and (min-height: 600px) {
+  #wrapper #mainpage #mc_embed_signup {
+    position: fixed;
+    padding-bottom: 2em; } }
+
+/*# sourceMappingURL=mobile.css.map */
