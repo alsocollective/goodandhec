@@ -205,11 +205,14 @@ path {
           vertical-align: bottom;
           position: absolute;
           top: 0;
-          right: 0; }
+          right: 0;
+          text-decoration: none;
+          border-bottom: none;
+          padding-bottom: 0; }
         #wrapper #mainpage #mc_embed_signup .mc-field-group div.mce_inline_error {
           display: none !important; }
         #wrapper #mainpage #mc_embed_signup .mc-field-group input.mce_inline_error {
-          background-color: #f00 !important;
+          background-color: red !important;
           background-color: rgba(255, 0, 0, 0.25) !important;
           -webkit-transition: background-color 0.5s ease-in-out;
           -moz-transition: background-color 0.5s ease-in-out;
@@ -239,7 +242,7 @@ path {
         top: 30px;
         left: 40px; }
         #wrapper #subpage > .content #topleftlogosmall path {
-          fill: #fff; }
+          fill: white; }
         #wrapper #subpage > .content #topleftlogosmall svg {
           position: relative; }
       #wrapper #subpage > .content p {
@@ -264,7 +267,7 @@ path {
       #wrapper #subpage.open #toggleicon {
         display: block; }
         #wrapper #subpage.open #toggleicon path {
-          fill: #fff; }
+          fill: white; }
         #wrapper #subpage.open #toggleicon svg {
           -ms-transform: rotate(-45deg);
           -webkit-transform: rotate(-45deg);
@@ -314,7 +317,7 @@ path {
         display: inline-block;
         padding: 3em; }
       #wrapper #subpage #bottomlogoicons path {
-        fill: #fff; }
+        fill: white; }
 
 .closed {
   overflow: hidden; }
@@ -323,6 +326,7 @@ path {
   from {
     top: 30px;
     opacity: 0; }
+
   to {
     top: 0px;
     opacity: 1; } }
@@ -330,6 +334,7 @@ path {
   from {
     top: 30px;
     opacity: 0; }
+
   to {
     top: 0px;
     opacity: 1; } }
@@ -337,6 +342,7 @@ path {
   from {
     top: 30px;
     opacity: 0; }
+
   to {
     top: 0px;
     opacity: 1; } }
@@ -371,5 +377,3 @@ path {
   transition: opacity 0.5s ease-in-out; }
   #overlay.fade {
     opacity: 0; }
-
-/*# sourceMappingURL=style.css.map */
