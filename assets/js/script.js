@@ -7,6 +7,7 @@ var app = {
 		} else {
 			app.youtube.novideo();
 		};
+		app.overideSubmit();
 		// if (app.videoLooper && !app.detectMobile()) { //&& false
 		// 	app.videoLooper.init({
 		// 		videos: ["lera3", "melissa1", "lera1"],
@@ -28,6 +29,12 @@ var app = {
 		// }
 		// 	, 1500)
 		// }, 1000)
+
+	},
+	overideSubmit: function() {
+		$("#mc-embedded-subscribe").click(function(event) {
+			this.href = "http://goodandhec.us10.list-manage.com/subscribe?u=2c5eed12197d57d3af985c724&id=723e03d532&MERGE0=" + $("#mce-EMAIL").val();
+		});
 	},
 	detectMobile: function() {
 		// check the useragent this is a bit problematic... but hey...
