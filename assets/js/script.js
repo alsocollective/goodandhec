@@ -37,6 +37,7 @@ var app = {
 		});
 		$("#mce-EMAIL").keyup(function(event) {
 			if (event.which == 13) {
+				ga('send', 'event', 'conversion', 'click', 'subscribe');
 				window.open("http://goodandhec.us10.list-manage.com/subscribe?u=2c5eed12197d57d3af985c724&id=723e03d532&MERGE0=" + $("#mce-EMAIL").val());
 			}
 		});
@@ -63,12 +64,12 @@ app.analytics = {
 	init: function() {
 		$(".social a").click(app.analytics.social);
 		$("#mc_embed_signup a").click(app.analytics.email);
-		$("#toggleicon a").click(app.analytics.openwindow);
+		$("#linktosecondpage a").click(app.analytics.openwindow);
 		$("#mc-embedded-subscribe").click(app.analytics.subscription);
-		//$("#toggleicon").click(app.analytics.closewindow);
+		$("#toggleicon a").click(app.analytics.closewindow);
 	},
 	closewindow: function(event) {
-		//ga('send', 'pageview', '/home', 'Home');
+		ga('send', 'pageview', '/home', 'Home');
 	},
 	subscription: function(event) {
 		ga('send', 'event', 'conversion', 'click', 'subscribe');
@@ -81,7 +82,7 @@ app.analytics = {
 	},
 	openwindow: function(event) {
 		ga('send', 'event', 'conversion', 'click', 'more info');
-		//ga('send', 'pageview', '/more-info', 'More Info');
+		ga('send', 'pageview', '/more-info', 'More Info');
 	}
 
 }
